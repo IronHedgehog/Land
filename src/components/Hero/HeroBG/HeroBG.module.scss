@@ -1,0 +1,108 @@
+@import '../../../assets/sass/main.scss';
+
+.bg {
+  background-image: url(../../../assets/images/Hero/hero-mob-1x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  width: 320px;
+  height: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 140px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.bg__retina {
+    background-image: url(../../../assets/images/Hero/hero-mob-2x-min.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    );
+  
+    width: 320px;
+    height: 520px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 140px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+.heroSection__Title {
+  width: 241px;
+  height: 132px;
+
+  font-family: 'Open Sans';
+
+  font-weight: 300;
+  font-size: 52px;
+  line-height: 66px;
+
+  text-align: center;
+
+  color: var(--second-text-cl);
+}
+
+.heroSection__Text {
+  font-family: 'Open Sans';
+
+  width: 246px;
+  height: 74px;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 37px;
+
+  text-align: center;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  color: var(--second-text-cl);
+}
+
+.heroSection__ReadMoreButton {
+  display: block;
+  text-decoration: none;
+
+  width: 156px;
+  height: 45px;
+
+  margin-left: 45px;
+
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  text-align: center;
+
+  background: var(--accent-active-cl);
+  border-radius: 5px;
+}
+
+.ReadMoreButton__text {
+  width: 86px;
+  height: 26px;
+
+  font-family: 'Open Sans';
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: var(--main-text-cl);
+}

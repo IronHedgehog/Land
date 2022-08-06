@@ -1,0 +1,30 @@
+@import '../../assets/sass/main.scss';
+
+.sectionHeader {
+  position: fixed;
+}
+
+.sectionHeader__TitleBlock {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+.sectionHeader__Title {
+  font-family: 'Open Sans';
+
+  height: 43px;
+
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 42px;
+
+  margin-left: 5px;
+
+  color: var(--main-text-cl);
+}
+
+.sectionHeader__TitleActive {
+  color: var(--accent-active-cl);
+}

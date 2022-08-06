@@ -1,0 +1,35 @@
+.AboutUsBG {
+  background-image: url(../../../assets/images/AboutUs/AboutUs-mob-1x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 320px;
+  height: 220px;
+}
+
+.AboutUsBG__retina {
+  background-image: url(../../../assets/images/AboutUs/AboutUs-mob-2x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 320px;
+  height: 220px;
+}
