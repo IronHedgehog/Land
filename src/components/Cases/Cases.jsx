@@ -6,14 +6,14 @@ import { v4 as uuidv4 } from 'uuid';
 const Cases = () => {
   return (
     <section className={s.cases}>
-      <p>This is what we do</p>
-      <h2>Business Cases</h2>
-      <p>
+      <p className={s.cases__beforeTitle}>This is what we do</p>
+      <h2 className={s.cases__Title}>Business Cases</h2>
+      <p className={s.cases__text}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </p>
 
-      <ul className={s.gallery} >
+      <ul className={s.cases__gallery}>
         {galleryItems.length > 0
           ? galleryItems.map(({ preview, original, description }) => (
               <CaseLib

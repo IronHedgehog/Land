@@ -1,19 +1,17 @@
-.cases {
+.team__Section {
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  background-color: var(--main-bg-cl);
+  padding: 40px 20px;
 }
 
-.cases__beforeTitle {
-  width: 159px;
+.team__Section__beforeTitle {
+  width: 103px;
 
   font-family: 'Open Sans';
 
-  margin-left: 55px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 
   font-weight: 400;
@@ -25,12 +23,13 @@
   color: var(--third-text-cl);
 }
 
-.cases__Title {
-  width: 219px;
+.team__Section__Title {
+  width: 220px;
 
   font-family: 'Open Sans';
 
-  margin-left: 26px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 
   font-weight: 300;
@@ -42,12 +41,13 @@
   color: var(--third-text-cl);
 }
 
-.cases__text {
+.team__Section__text {
   width: 207px;
 
   font-family: 'Open Sans';
 
-  margin-left: 36px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 
   font-weight: 400;
@@ -57,8 +57,4 @@
   text-align: center;
 
   color: var(--third-text-cl);
-}
-
-.cases__gallery {
-  width: 280px;
 }

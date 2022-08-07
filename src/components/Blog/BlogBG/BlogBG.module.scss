@@ -1,0 +1,39 @@
+@import '../../../assets/sass/main.scss';
+
+.blockBG {
+  background-image: url(../../../assets/images/Blog/mob/Blog-mob-1x-min.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  width: 320px;
+  height: 247px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 140px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.blockBG__retina {
+  background-image: url(../../../assets/images/Blog/mob/Blog-mob-2x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  width: 320px;
+  height: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 140px;
+  padding-left: 40px;
+  padding-right: 40px;
+}

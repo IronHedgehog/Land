@@ -1,0 +1,25 @@
+.textBlock__button {
+    display: block;
+  
+    width: 158px;
+    height: 47px;
+  
+    text-align: center;
+    padding-top: 9px;
+  
+    border: 1px solid var(--main-text-cl);
+    border-radius: 5px;
+  }
+  
+  .textBlock__button__text {
+    width: 86px;
+    height: 26px;
+  
+    font-family: 'Open Sans';
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+  
+    color: var(--main-text-cl);
+  }
