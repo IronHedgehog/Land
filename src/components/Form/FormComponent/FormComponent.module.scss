@@ -1,0 +1,39 @@
+.input {
+  width: 280px;
+  height: 40px;
+
+  padding-left: 10px;
+  margin-bottom: 30px;
+
+  background-color: var(--main-text-cl);
+  border: 1px solid var(--input-borders);
+}
+
+.formButton {
+  width: 280px;
+  height: 42px;
+
+  background: var(--accent-active-cl);
+  border-color: transparent;
+  border-radius: 5px;
+}
+
+.formButton__text {
+  width: 49px;
+
+  font-family: 'Open Sans';
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+
+  text-align: center;
+
+  color: var(--main-text-cl);
+}
+
+.errorMessage {
+  font-size: 15px;
+  color: var(--error-text-color);
+  margin-bottom: 10px;
+}

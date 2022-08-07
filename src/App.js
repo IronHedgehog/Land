@@ -4,6 +4,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Blog from './components/Blog/Blog';
 import Cases from './components/Cases/Cases';
 import Container from './components/Container/Container';
+import Form from './components/Form/Form';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import Team from './components/Team/Team';
@@ -14,12 +15,13 @@ const App = () => {
       <Container>
         <Header />
       </Container>
-      <main className='main'>
+      <main className="main">
         <Hero />
         <AboutUs />
         <Cases />
         <Blog />
-        <Team/>
+        <Team />
+        <Form />
       </main>
     </>
   );

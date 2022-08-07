@@ -1,0 +1,60 @@
+@import '../../../assets/sass/main.scss';
+
+.list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.imgContainer {
+  width: 280px;
+  height: 186px;
+  position: relative;
+  margin-right: 20px;
+
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.list__item__picture {
+  margin-bottom: 15px;
+  &:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  }
+}
+.list__item__name {
+  width: 116px;
+
+  font-family: 'Open Sans';
+
+  margin-bottom: 12px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 29px;
+
+  text-align: center;
+
+  color: var(--third-text-cl);
+}
+
+.list__item__role {
+  width: 108px;
+
+  font-family: 'Open Sans';
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: var(--third-text-cl);
+}

@@ -1,0 +1,35 @@
+.formBG {
+  background-image: url(../../../assets/images/CallbackForm/mob/callbackForm1-mob-1x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 320px;
+  height: 220px;
+}
+
+.formBG__retina {
+  background-image: url(../../../assets/images/CallbackForm/mob/callbackForm2-mob-2x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  margin-right: auto;
+  margin-left: auto;
+
+  width: 320px;
+  height: 220px;
+}
