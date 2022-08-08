@@ -9,6 +9,18 @@
   align-items: center;
 
   margin-bottom: 10px;
+
+  transform: translateZ(0);
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
 
 .sectionHeader__Title {

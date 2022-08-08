@@ -4,7 +4,7 @@ import FormComponent from './FormComponent/FormComponent';
 
 const Form = () => {
   return (
-    <section>
+    <section className={s.section__feedbackForm} id="Contacts">
       <FormBG />
       <div className={s.form}>
         <h2 className={s.sectionTitle}>Request Callback</h2>

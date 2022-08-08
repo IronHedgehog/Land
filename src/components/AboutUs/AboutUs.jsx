@@ -4,7 +4,7 @@ import TextBlock from '../TextBlock/TextBlock';
 
 const AboutUs = () => {
   return (
-    <section className={s.aboutUs__section}>
+    <section className={s.aboutUs__section} id="About">
       <AboutUsBG />
       <TextBlock
         type={'1'}

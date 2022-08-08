@@ -4,9 +4,9 @@ import { LinkIcon } from '../../assets/icons/socialIcons/Link.js';
 import { TwitterIcon } from '../../assets/icons/socialIcons/Twitter.js';
 import { YoutubeIcon } from '../../assets/icons/socialIcons/Youtube.js';
 
-const Social = () => {
+const Social = ({ type }) => {
   return (
-    <ul className={s.socialList}>
+    <ul className={type !== 'footer' ? s.socialList : s.socialList__footer}>
       <li className={s.socialList__item}>
         <a href="/">
           <FacebookIcon />

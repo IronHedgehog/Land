@@ -1,0 +1,19 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
+}
+
+.footerText {
+  width: 256px;
+
+  font-family: 'Open Sans';
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: var(--main-text-cl);
+}

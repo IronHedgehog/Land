@@ -3,8 +3,7 @@ import HeroBG from './HeroBG/HeroBG';
 
 const Hero = () => {
   return (
-    <section className={s.heroSection}>
-      
+    <section className={s.heroSection} id="Home">
       <HeroBG />
     </section>
   );

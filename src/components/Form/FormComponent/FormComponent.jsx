@@ -1,7 +1,6 @@
 import s from './FormComponent.module.scss';
 import { Formik, ErrorMessage } from 'formik';
 import { callbackValidationSchema } from '../../../helpers/validation/callbackValidation';
-import { AlertIcon } from '../../../assets/icons/Form/Alert';
 
 const FormComponent = () => {
   return (
@@ -17,7 +16,14 @@ const FormComponent = () => {
         resetForm();
       }}
     >
-      {({ values, handleChange, handleBlur, handleSubmit }) => (
+      {({
+        values,
+        errors,
+        touched,
+        handleChange,
+        handleBlur,
+        handleSubmit,
+      }) => (
         <form onSubmit={handleSubmit}>
           <>
             <label className={s.form__label}>
@@ -27,8 +33,8 @@ const FormComponent = () => {
                 autoComplete="off"
                 value={values.username}
                 onChange={handleChange}
-                onBlur={handleBlur}
-                placeholder="username"
+                // onBlur={handleBlur}
+                placeholder="Enter your name"
                 className={s.input}
               />
               <ErrorMessage
@@ -50,14 +56,14 @@ const FormComponent = () => {
                 placeholder="Enter email*"
                 className={s.input}
               />
-              <ErrorMessage
-                component="div"
-                name="email"
-                className={s.errorMessage}
-                InputProps={{
-                  endAdornment: <AlertIcon />,
-                }}
-              />
+
+              <div className={s.alertContainer}>
+                <ErrorMessage
+                  component="div"
+                  name="email"
+                  className={s.errorMessage}
+                />
+              </div>
             </label>
           </>
 

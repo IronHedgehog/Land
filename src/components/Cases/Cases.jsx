@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const Cases = () => {
   return (
-    <section className={s.cases}>
+    <section className={s.cases} id="Cases">
       <p className={s.cases__beforeTitle}>This is what we do</p>
       <h2 className={s.cases__Title}>Business Cases</h2>
       <p className={s.cases__text}>

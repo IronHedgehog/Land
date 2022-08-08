@@ -5,7 +5,7 @@ import BlogBG from './BlogBG/BlogBG';
 
 const Blog = () => {
   return (
-    <section className={s.blog__section}>
+    <section className={s.blog__section} id="Blog">
       <BlogBG />
       <TextBlock
         type={'2'}
