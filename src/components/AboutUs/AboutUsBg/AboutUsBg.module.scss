@@ -22,6 +22,12 @@
     background-image: url(../../../assets/images/AboutUs/tab/About-tab-1x-min.jpg);
   }
   @include vp(desktop) {
+    width: 368px;
+    height: 590px;
+
+    margin-left: 0;
+    margin-right: 0;
+
     background-image: url(../../../assets/images/AboutUs/desc/AboutUs-desc-1x-min.jpg);
   }
 }
