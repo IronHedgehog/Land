@@ -1,3 +1,5 @@
+@import '../../../assets/sass/main.scss';
+
 .input {
   width: 280px;
   height: 40px;
@@ -7,6 +9,15 @@
 
   background-color: var(--main-text-cl);
   border: 1px solid var(--input-borders);
+
+  @include vp(tablet) {
+    width: 324px;
+  }
+
+  @include vp(desktop) {
+    width: 620px;
+    height: 40px;
+  }
 }
 
 .formButton {
@@ -16,6 +27,18 @@
   background: var(--accent-active-cl);
   border-color: transparent;
   border-radius: 5px;
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 300ms linear;
+  }
+
+  @include vp(tablet) {
+    width: 324px;
+  }
+
+  @include vp(desktop) {
+    width: 640px;
+  }
 }
 
 .formButton__text {
@@ -30,6 +53,14 @@
   text-align: center;
 
   color: var(--main-text-cl);
+
+  @include vp(desktop) {
+    width: 52px;
+    height: 25px;
+
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 .alertContainer {

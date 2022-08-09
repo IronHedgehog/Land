@@ -1,7 +1,12 @@
+@import '../../assets/sass/main.scss';
+
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 256px;
+  @include vp(tablet) {
+    width: 287px;
+  }
 }
 
 .footerText {
@@ -16,4 +21,11 @@
   text-align: center;
 
   color: var(--main-text-cl);
+
+  @include vp(tablet) {
+    width: 287px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
 }

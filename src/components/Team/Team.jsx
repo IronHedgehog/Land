@@ -11,7 +11,7 @@ const Team = () => {
         sapiente!
       </p>
 
-      <ul>
+      <ul className={s.list}>
         <PhotoCards />
       </ul>
     </section>

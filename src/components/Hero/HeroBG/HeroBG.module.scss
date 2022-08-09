@@ -16,34 +16,82 @@
   margin-right: auto;
   margin-left: auto;
   padding-top: 140px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.bg__retina {
-    background-image: url(../../../assets/images/Hero/hero-mob-2x-min.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    );
-  
-    width: 320px;
-    height: 520px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 140px;
-    padding-left: 40px;
-    padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 10;
+
+  @include vp(tablet) {
+    width: 768px;
+    height: 1024px;
+
+    padding-top: 400px;
+    padding-left: 135px;
+    padding-right: 135px;
+
+    background-image: url(../../../assets/images/Hero/tab/Hero-tab-1x-min.jpg);
   }
+
+  @include vp(desktop) {
+    width: 1360px;
+    height: 768px;
+
+    padding-top: 280px;
+    padding-left: 435px;
+    padding-right: 435px;
+
+    background-image: url(../../../assets/images/Hero/desc/hero-des-1x-min.jpg);
+  }
+}
+
+.bg__retina {
+  background-image: url(../../../assets/images/Hero/hero-mob-2x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  );
+
+  width: 320px;
+  height: 520px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 10;
+
+  @include vp(tablet) {
+    width: 768px;
+    height: 1024px;
+
+    padding-top: 400px;
+    padding-left: 135px;
+    padding-right: 135px;
+
+    background-image: url(../../../assets/images/Hero/tab/Hero-tab-2x-min.jpg);
+  }
+
+  @include vp(desktop) {
+    width: 1360px;
+    height: 768px;
+
+    padding-top: 280px;
+    padding-left: 435px;
+    padding-right: 435px;
+
+    background-image: url(../../../assets/images/Hero/desc/hero-des-2x-min.jpg);
+  }
+}
 
 .heroSection__Title {
   width: 241px;
   height: 132px;
 
   font-family: 'Open Sans';
+  margin-left: 20px;
 
   font-weight: 300;
   font-size: 52px;
@@ -52,6 +100,15 @@
   text-align: center;
 
   color: var(--second-text-cl);
+
+  @include vp(tablet) {
+    width: 493px;
+    height: 66px;
+
+    font-size: 55px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .heroSection__Text {
@@ -59,6 +116,8 @@
 
   width: 246px;
   height: 74px;
+
+  margin-left: 20px;
 
   font-weight: 400;
   font-size: 22px;
@@ -70,6 +129,14 @@
   margin-bottom: 20px;
 
   color: var(--second-text-cl);
+
+  @include vp(tablet) {
+    width: 459px;
+    height: 37px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .heroSection__ReadMoreButton {
@@ -79,7 +146,7 @@
   width: 156px;
   height: 45px;
 
-  margin-left: 45px;
+  margin-left: 65px;
 
   padding-top: 8px;
   padding-bottom: 10px;
@@ -90,6 +157,22 @@
 
   background: var(--accent-active-cl);
   border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 300ms linear;
+  }
+
+  @include vp(tablet) {
+    display: flex;
+    align-items: center;
+
+    width: 165px;
+    height: 48px;
+
+    padding-top: 10px;
+    margin-left: 165px;
+  }
 }
 
 .ReadMoreButton__text {
@@ -105,4 +188,8 @@
   text-align: center;
 
   color: var(--main-text-cl);
+}
+
+.arrowWrapper {
+  margin-top: 5px;
 }

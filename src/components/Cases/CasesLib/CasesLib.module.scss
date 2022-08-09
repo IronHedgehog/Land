@@ -1,7 +1,18 @@
+@import '../../../assets/sass/main.scss';
+
 .gallery_list {
   &:hover {
     opacity: 0.6;
     transition: opacity 300ms linear;
+  }
+
+  @include vp(tablet) {
+    width: 225px;
+    height: 150px;
+  }
+  @include vp(desktop) {
+    width: 421px;
+    height: 282px;
   }
 }
 

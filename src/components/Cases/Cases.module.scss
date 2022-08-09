@@ -1,3 +1,5 @@
+@import '../../assets/sass/main.scss';
+
 .cases {
   margin-left: auto;
   margin-right: auto;
@@ -6,6 +8,23 @@
   padding-bottom: 40px;
 
   background-color: var(--main-bg-cl);
+
+  @include vp(tablet) {
+    width: 768px;
+    height: 580px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include vp(desktop) {
+    width: 1360px;
+    height: 930px;
+    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 80px 30px;
+  }
 }
 
 .cases__beforeTitle {
@@ -23,6 +42,16 @@
   text-align: center;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 175px;
+    height: 33px;
+
+    font-size: 20px;
+    line-height: 33px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .cases__Title {
@@ -40,6 +69,13 @@
   text-align: center;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 275px;
+    height: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .cases__text {
@@ -57,8 +93,31 @@
   text-align: center;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 645px;
+    height: 29px;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .cases__gallery {
   width: 280px;
+
+  @include vp(tablet) {
+    margin-left: 6px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  @include vp(desktop) {
+    margin-left: 0;
+  }
 }

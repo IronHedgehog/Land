@@ -2,16 +2,29 @@
 
 .sectionHeader {
   position: fixed;
+  height: 120px;
+
+  padding-top: 20px;
+  z-index: 1000;
+
+  @include vp(tablet) {
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+  }
 }
 
 .sectionHeader__TitleBlock {
   display: flex;
   align-items: center;
 
+  margin-left: auto;
+  margin-right: auto;
+
   margin-bottom: 10px;
 
   transform: translateZ(0);
-  -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
 
@@ -20,6 +33,16 @@
   &:active {
     cursor: pointer;
     transform: scale(1.1);
+  }
+
+  @include vp(tablet) {
+    width: 300px;
+    margin-right: 70px;
+  }
+
+  @include vp(desktop) {
+    margin-left: -50px;
+    margin-right: 570px;
   }
 }
 
@@ -35,6 +58,12 @@
   margin-left: 5px;
 
   color: var(--main-text-cl);
+}
+
+.sectionHeader__TitleLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sectionHeader__TitleActive {

@@ -17,6 +17,22 @@
   padding-top: 140px;
   padding-left: 40px;
   padding-right: 40px;
+
+  @include vp(tablet) {
+    width: 368px;
+    height: 493px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    background-image: url(../../../assets/images/Blog/tab/Blog-tab-1x-min.jpg);
+  }
+
+  @include vp(desktop) {
+    width: 670px;
+    height: 460px;
+    background-image: url(../../../assets/images/Blog/desc/Blog-desc-1x-min.jpg);
+  }
 }
 
 .blockBG__retina {
@@ -37,4 +53,21 @@
   padding-top: 140px;
   padding-left: 40px;
   padding-right: 40px;
+
+  @include vp(tablet) {
+    width: 368px;
+    height: 493px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    background-image: url(../../../assets/images/Blog/tab/blog-tab-2x-min.jpg);
+  }
+
+  @include vp(desktop) {
+    width: 670px;
+    height: 460px;
+
+    background-image: url(../../../assets/images/Blog/desc/Blog-desc-2x-min.jpg);
+  }
 }

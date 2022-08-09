@@ -1,3 +1,5 @@
+@import '../../../assets/sass/main.scss';
+
 .formBG {
   background-image: url(../../../assets/images/CallbackForm/mob/callbackForm1-mob-1x-min.jpg);
   background-size: cover;
@@ -14,6 +16,18 @@
 
   width: 320px;
   height: 220px;
+  @include vp(tablet) {
+    width: 368px;
+    height: 354px;
+
+    background-image: url(../../../assets/images/CallbackForm/mob/tab/form-tab-1x-min.jpg);
+  }
+  @include vp(desktop) {
+    width: 670px;
+    height: 454px;
+
+    background-image: url(../../../assets/images/CallbackForm/desc/Form-desc-1x-min.jpg);
+  }
 }
 
 .formBG__retina {
@@ -32,4 +46,19 @@
 
   width: 320px;
   height: 220px;
+
+  @include vp(tablet) {
+    width: 368px;
+    height: 354px;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(../../../assets/images/CallbackForm/mob/tab/form-tab-2x-min.jpg);
+  }
+
+  @include vp(desktop) {
+    width: 670px;
+    height: 454px;
+
+    background-image: url(../../../assets/images/CallbackForm/desc/Form-desc-2x-min.jpg);
+  }
 }

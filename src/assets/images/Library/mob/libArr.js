@@ -41,13 +41,6 @@ const galleryItems = [
       'https://cdn.pixabay.com/photo/2019/05/16/23/04/landscape-4208571_1280.jpg',
     description: 'Mountain Lake Sailing',
   },
-  {
-    preview:
-      'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272__340.jpg',
-    original:
-      'https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg',
-    description: 'Alpine Spring Meadows',
-  },
 ];
 
 export default galleryItems;

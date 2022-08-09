@@ -1,7 +1,18 @@
 @import '../../../assets/sass/main.scss';
 
+.list__item {
+  @include vp(tablet) {
+    width: 223px;
+  }
+  @include vp(desktop) {
+    width: 421px;
+  }
+}
 .list__item:not(:last-child) {
   margin-bottom: 20px;
+  @include vp(tablet) {
+    margin-bottom: 0px;
+  }
 }
 
 .imgContainer {
@@ -13,6 +24,30 @@
   &:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 300ms linear;
+
+    transform: translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+    &:hover,
+    &:focus,
+    &:active {
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: transform 300ms linear;
+    }
+  }
+
+  @include vp(tablet) {
+    width: 223px;
+    height: 148px;
+    margin-bottom: 15px;
+  }
+
+  @include vp(desktop) {
+    width: 421px;
+    height: 286px;
   }
 }
 
@@ -21,6 +56,16 @@
   &:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 300ms linear;
+  }
+  @include vp(tablet) {
+    width: 223px;
+    height: 148px;
+  }
+
+  @include vp(desktop) {
+    width: 421px;
+    height: 286px;
   }
 }
 .list__item__name {
@@ -40,6 +85,17 @@
   text-align: center;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 223px;
+
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  @include vp(desktop) {
+    width: 130px;
+  }
 }
 
 .list__item__role {
@@ -57,4 +113,15 @@
   text-align: center;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 223px;
+
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  @include vp(desktop) {
+    width: 124px;
+  }
 }

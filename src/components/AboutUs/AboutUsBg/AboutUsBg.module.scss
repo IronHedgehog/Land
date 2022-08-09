@@ -1,3 +1,5 @@
+@import '../../../assets/sass/main.scss';
+
 .AboutUsBG {
   background-image: url(../../../assets/images/AboutUs/AboutUs-mob-1x-min.jpg);
   background-size: cover;
@@ -14,6 +16,14 @@
 
   width: 320px;
   height: 220px;
+  @include vp(tablet) {
+    width: 368px;
+    height: 590px;
+    background-image: url(../../../assets/images/AboutUs/tab/About-tab-1x-min.jpg);
+  }
+  @include vp(desktop) {
+    background-image: url(../../../assets/images/AboutUs/desc/AboutUs-desc-1x-min.jpg);
+  }
 }
 
 .AboutUsBG__retina {
@@ -32,4 +42,18 @@
 
   width: 320px;
   height: 220px;
+  @include vp(tablet) {
+    width: 368px;
+    height: 590px;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: url(../../../assets/images/AboutUs/tab/About-tab-2x-min.jpg);
+  }
+
+  @include vp(desktop) {
+    width: 670px;
+    height: 460px;
+
+    background-image: url(../../../assets/images/AboutUs/desc/AboutUs-desc-2x-min.jpg);
+  }
 }

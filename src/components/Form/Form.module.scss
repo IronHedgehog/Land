@@ -4,10 +4,35 @@
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+
+  @include vp(tablet) {
+    display: flex;
+    width: 768px;
+    // margin-left: 0px;
+    // margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  @include vp(desktop) {
+    width: 1360px;
+    height: 454px;
+    margin-bottom: 0px;
+  }
 }
 
 .form {
   padding: 40px 20px;
+
+  @include vp(tablet) {
+    width: 400px;
+    height: 354px;
+    padding: 40px;
+  }
+
+  @include vp(desktop) {
+    width: 620px;
+    padding: 80px 20px;
+  }
 }
 
 .sectionTitle {
@@ -22,4 +47,8 @@
   line-height: 48px;
 
   color: var(--third-text-cl);
+
+  @include vp(tablet) {
+    width: 305px;
+  }
 }

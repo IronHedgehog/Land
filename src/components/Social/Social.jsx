@@ -9,22 +9,22 @@ const Social = ({ type }) => {
     <ul className={type !== 'footer' ? s.socialList : s.socialList__footer}>
       <li className={s.socialList__item}>
         <a href="/">
-          <FacebookIcon />
+          <FacebookIcon color={'#ffffff'} />
         </a>
       </li>
       <li className={s.socialList__item}>
         <a href="/">
-          <TwitterIcon />
+          <TwitterIcon color={'#ffffff'} />
         </a>
       </li>
       <li className={s.socialList__item}>
         <a href="/">
-          <YoutubeIcon />
+          <YoutubeIcon color={'#ffffff'} />
         </a>
       </li>
       <li className={s.socialList__item}>
         <a href="/">
-          <LinkIcon />
+          <LinkIcon color={'#ffffff'} />
         </a>
       </li>
     </ul>

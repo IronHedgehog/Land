@@ -1,3 +1,5 @@
+@import '../../assets/sass/main.scss';
+
 .aboutUs__section__textBlock {
   width: 320px;
   height: 562px;
@@ -6,6 +8,16 @@
   margin-left: auto;
   margin-right: auto;
   padding: 40px 30px;
+
+  @include vp(tablet) {
+    width: 400px;
+    height: 590px;
+  }
+
+  @include vp(desktop) {
+    width: 690px;
+    height: 460px;
+  }
 }
 
 .textBlock__beforeTitle {
@@ -21,6 +33,14 @@
   line-height: 30px;
 
   color: var(--main-text-cl);
+
+  @include vp(tablet) {
+    width: 237px;
+    height: 33px;
+
+    font-size: 20px;
+    line-height: 33px;
+  }
 }
 
 .textBlock__Title {
@@ -36,6 +56,11 @@
   line-height: 48px;
 
   color: var(--main-text-cl);
+
+  @include vp(desktop) {
+    width: 541px;
+    height: 48px;
+  }
 }
 
 .textBlock__text {
@@ -51,6 +76,28 @@
   line-height: 26px;
 
   color: var(--main-text-cl);
+
+  @include vp(tablet) {
+    width: 315px;
+    height: 226px;
+
+    margin-right: 50px;
+
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  @include vp(desktop) {
+    width: 606px;
+    height: 113px;
+
+    font-weight: 400;
+
+    font-size: 23px;
+    line-height: 33px;
+
+    margin-bottom: 60px;
+  }
 }
 
 // ---------------------------------------------------------------------------//
@@ -63,6 +110,16 @@
 
   background-color: var(--accent-color);
   padding: 40px 40px 40px 20px;
+
+  @include vp(tablet) {
+    width: 400px;
+    height: 493px;
+  }
+
+  @include vp(desktop) {
+    width: 690px;
+    height: 460px;
+  }
 }
 
 .textBlock_date {
@@ -77,6 +134,15 @@
   line-height: 30px;
 
   color: var(--main-text-cl);
+
+  @include vp(tablet) {
+    width: 126px;
+    height: 33px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+  }
 }
 
 .textBlock_Title_Blog {
@@ -105,4 +171,21 @@
   line-height: 26px;
 
   color: var(--main-text-cl);
+
+  @include vp(tablet) {
+    width: 315px;
+    height: 226px;
+
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  @include vp(desktop) {
+    width: 606px;
+    height: 113px;
+
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
 }
