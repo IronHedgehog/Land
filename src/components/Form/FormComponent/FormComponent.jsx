@@ -14,6 +14,7 @@ const FormComponent = () => {
       onSubmit={(values, { resetForm }) => {
         console.log('values', values);
         resetForm();
+        alert('You form submissions has been received');
       }}
     >
       {({
